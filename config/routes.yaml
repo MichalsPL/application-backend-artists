@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+show_artists:
+    path: /artists
+    controller: App\Controller\ArtistController::showArtists
+show_artist:
+    path: /artist/{token}
+    controller: App\Controller\ArtistController::showArtist
+show_album:
+    path: /albums/{token}
+    controller: App\Controller\AlbumController::showAlbum
